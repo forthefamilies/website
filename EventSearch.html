@@ -1,54 +1,123 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Search Event</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<link rel="stylesheet" type="text/css" href="bootstrap_dropdown.css" media="all">
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-<link href="main.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<head>
+
+
+</head>
+<body id="main_body" >
+
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+
+		<h1><a>Search Event</a></h1>
+		<form id="form_55797" class="appnitro"  method="post" action="">
+					<div class="form_description">
+			<h2>Search Event</h2>
+			<p></p>
+		</div>
+			<ul >
+
+					<li id="li_1" >
+		<label class="description" for="element_1">Keyword </label>
+		<div>
+			<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/>
+		</div>
+<span>
+					<form name="Filter">
+					<select style="font-size:12px;color:#grey;font-family:verdana;background-color:#ffffff;" name="menu">
+					<option value="http://">Music Therapy</option>
+					<option value="http://">Art Therapy</option>
+					<option value="http://">Physiological exercise/yoga</option>
+					<option value="http://">Recreational Activity</option>
+					<option value="http://">Support</option>
+					</select>
+					<input style="font-size:12px;color:#ffffff;font-family:verdana;background-color:#006699;" type="button" onClick="location=document.Filter.menu.options[document.Filter.menu.selectedIndex].value;" value="Filter">
+					</form>
+				</span>
+
+
+
+
+		</li>		<li id="li_2" >
 
 
 
 
 
 
+		<label class="description" for="element_2">Start/End date </label>
+		<span>
+			<input id="element_2_1" name="element_2_1" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<label for="element_2_1">MM</label>
+		</span>
+		<span>
+			<input id="element_2_2" name="element_2_2" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<label for="element_2_2">DD</label>
+		</span>
+		<span>
+	 		<input id="element_2_3" name="element_2_3" class="element text" size="4" maxlength="4" value="" type="text">
+			<label for="element_2_3">YYYY</label>
+		</span>
+		<span id="calendar_2">
+			<img id="cal_img_2" class="datepicker" src="calendar.gif" alt="Pick a date.">
+		</span>
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4"> </label>
+		<span>
+			<input id="element_4_1" name="element_4_1" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<label for="element_4_1">MM</label>
+		</span>
+		<span>
+			<input id="element_4_2" name="element_4_2" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<label for="element_4_2">DD</label>
+		</span>
+		<span>
+	 		<input id="element_4_3" name="element_4_3" class="element text" size="4" maxlength="4" value="" type="text">
+			<label for="element_4_3">YYYY</label>
+		</span>
+
+		<span id="calendar_4">
+			<img id="cal_img_4" class="datepicker" src="calendar.gif" alt="Pick a date.">
+			 <div style="float:right;"></div>
+		</span>
+
+		</li>		<li id="li_3" >
+		<label class="description" for="element_3">Location </label>
+
+		<div class="left">
+			<input id="element_3_3" name="element_3_3" class="element text medium" value="" type="text">
+			<label for="element_3_3">City</label>
+		</div>
+
+		<div class="right">
+			<input id="element_3_4" name="element_3_4" class="element text medium" value="" type="text">
+			<label for="element_3_4">StateRegion</label>
+		</div>
+
+				</li>		<li id="li_5" >
+		<label class="description" for="element_5">Price Cap </label>
+		<span class="symbol">$</span>
+		<span>
+			<input id="element_4_1" name="element_4_1" class="element text currency" size="10" value="" type="text" />
+			<label for="element_4_1"></label>
+		</span>
 
 
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="55797" />
 
-  <h3> Search an Event on the website or use our custom google searcher to find other events </h3>
-<div class="container">
-<div class="row searchFilter" >
-   <div class="col-sm-12" >
-    <div class="input-group" >
-     <input id="table_filter" type="text" class="form-control" aria-label="Text input with segmented button dropdown" >
-     <div class="input-group-btn" >
-      <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="label-icon" >Filter</span> <span class="caret" >&nbsp;</span></button>
-      <div class="dropdown-menu dropdown-menu-right" >
-         <ul class="category_filters" >
-          <li >
-           <input class="cat_type category-input" data-label="All" id="all" value="" name="radios" type="radio" ><label for="all" >All</label>
-          </li>
-          <li >
-           <input type="radio" name="radios" id="Music Therapy" value="Music Therapy" ><label class="category-label" for="Design" >Design</label>
-          </li>
-          <li >
-           <input type="radio" name="radios" id="Art Therapy" value="Art Therapy" ><label class="category-label" for="Marketing" >Marketing</label>
-          </li>
-          <li >
-           <input type="radio" name="radios" id="Physiological exercise/yoga" value="Physiological exercise/yoga" ><label class="category-label" for="Programming" >Programming</label>
-          </li>
-          <li >
-           <input type="radio" name="radios" id="Recreational Activity" value="Recreational Activity" ><label class="category-label" for="Sales" >Sales</label>
-          </li>
-          <li >
-           <input type="radio" name="radios" id="Support" value="Support" ><label class="category-label" for="Support" >Support</label>
-          </li>
-         </ul>
-      </div>
-
-     </div>
-    </div>
-   </div>
-</div>
-</div>
+				<input id="saveForm" class="button_text" type="submit" name="Search Website" value="Search Website" />
+				<input id="saveForm" class="button_text" type="submit" name="Search Google" value="Search Google" />
+		</li>
+			</ul>
+		</form>
+	</div>
+	</body>
 </html>
