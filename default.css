@@ -20,8 +20,8 @@ h1,h2,h3,h4,h5,h6
 body
 {
 	font-family: "Trebuchet MS", sans-serif;
-	color: #7a7a7a;
-	font-size: 11pt;
+	color: #4a4a4a;
+	font-size: 14pt;
 }
 
 a
@@ -39,7 +39,7 @@ a:hover
 
 #outer
 {
-	margin: 2.5em 3.0em 1.5em 3.0em;
+	margin: 2.5em 20% 1.5em 20%;
 }
 
 /* Header */
