@@ -98,7 +98,7 @@ a:hover
 {
 	display: inline;
 	border-left: dotted 1px #848484;
-	padding-left: 0.8em;
+	padding-left: 0.7em;
 }
 
 #menu li.first
@@ -112,8 +112,8 @@ a:hover
 	text-decoration: none;
 	color: #6a6a6a;
 	font-weight: bold;
-	padding: 0.8em;
-	margin-right: 0.8em;
+	padding: 0em;
+	margin-right: 0%;
 	font-size: 0.9em;
 }
 
