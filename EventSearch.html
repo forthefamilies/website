@@ -27,11 +27,11 @@
 					<li id="li_1" >
 		<label class="description" for="element_1">Keyword </label>
 		<div>
-			<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/>
+			<input id="keyword" name="element_1" class="element text medium" type="text" maxlength="255" value=""/>
 		</div>
 <span>
 					<form name="Filter">
-					<select style="font-size:12px;color:#grey;font-family:verdana;background-color:#ffffff;" name="menu">
+					<select id="filter" style="font-size:12px;color:#grey;font-family:verdana;background-color:#ffffff;" name="menu">
 					<option value="http://">Music Therapy</option>
 					<option value="http://">Art Therapy</option>
 					<option value="http://">Physiological exercise/yoga</option>
@@ -92,12 +92,12 @@
 		<label class="description" for="element_3">Location </label>
 
 		<div class="left">
-			<input id="element_3_3" name="element_3_3" class="element text medium" value="" type="text">
+			<input id="city" name="element_3_3" class="element text medium" value="" type="text">
 			<label for="element_3_3">City</label>
 		</div>
 
 		<div class="right">
-			<input id="element_3_4" name="element_3_4" class="element text medium" value="" type="text">
+			<input id="state-region" name="element_3_4" class="element text medium" value="" type="text">
 			<label for="element_3_4">StateRegion</label>
 		</div>
 
@@ -105,17 +105,22 @@
 		<label class="description" for="element_5">Price Cap </label>
 		<span class="symbol">$</span>
 		<span>
-			<input id="element_4_1" name="element_4_1" class="element text currency" size="10" value="" type="text" />
+			<input id="price-cap" name="element_4_1" class="element text currency" size="10" value="" type="text" />
 			<label for="element_4_1"></label>
 		</span>
 
+<li>
+    <form action="SearchResults.html">
+        <input type="submit" value="Search Website" />
+    </form>
 
-					<li class="buttons">
-			    <input type="hidden" name="form_id" value="55797" />
+    <p></p>
 
-				<input id="saveForm" class="button_text" type="submit" name="Search Website" value="Search Website" />
-				<input id="saveForm" class="button_text" type="submit" name="Search Google" value="Search Google" />
-		</li>
+    <form onsubmit="location.href='http://google.com'">
+    <input type="submit" value="Search Google"/>
+</form>
+    </li>
+
 			</ul>
 		</form>
 	</div>
