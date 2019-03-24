@@ -14,5 +14,5 @@ var googleSearch = function() {
 
   url = "http://www.google.com/search?q=" + encodeURI(searchString);
   console.log(url);
-  window.location.href = url;
+  window.location.href = url; //demo: Example keyword ~Recreational Activity location:  Nashville TN
 }
